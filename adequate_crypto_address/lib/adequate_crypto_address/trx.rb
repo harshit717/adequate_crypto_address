@@ -19,7 +19,7 @@ module AdequateCryptoAddress
     private
 
     def valid_format?
-      address.match(/T[A-Za-z1-9]{33}/)
+      address.match(/^T[A-Za-z1-9]{33}$/)
     end
   end
   Tron = Trx
